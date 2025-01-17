@@ -1,0 +1,155 @@
+/* Globals
+------------------------------------------------------------ */
+body {
+    margin: 0;
+}
+
+img,
+picture {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+figure {
+    margin: 1em 0;
+}
+
+button,
+[role="button"] {
+    cursor: pointer;
+}
+
+header {
+    transition: all 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    margin-left: -9px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.up:hover polyline,
+.up:focus polyline {
+    stroke-width: 15;
+    stroke: #f8f8f8;
+}
+
+.up:active polyline {
+    stroke-width: 15;
+    transition: all 100ms ease-in-out;
+}
+
+.scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.horizontal-scroll {
+    .scroll-title {
+        width: 35%;
+    }
+
+    nav {
+        width: 65%;
+    }
+
+    transition: all 0.3s ease-in-out;
+    z-index: 40;
+}
+
+.scroll-title {
+    text-align: center;
+    font-weight: 700;
+    color: #727c87;
+    border-right: 1px solid rgba(#15803d, 0.8);
+    padding: 10px 24px 10px;
+}
+
+.nav-item {
+    padding: 12px 16px 13px;
+
+    &:not(:last-child) {
+        border-right: 1px solid rgba(#727c87, 0.2);
+    }
+}
+
+/* Remove the inline-block extra space */
+.horizontal-scroll,
+nav {
+    font-size: 0;
+}
+
+/* Requires font size to be reset for these elements */
+.scroll-title,
+.nav-item {
+    font-size: 14px;
+}
+
+.scroll-title,
+.nav-item,
+.vertical-align-middle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Demo purposes only, proceed with caution on Windows! */
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Utilities
+------------------------------------------------------------ */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+    background-color: #ddd;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}

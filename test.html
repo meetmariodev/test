@@ -1,0 +1,243 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+        <title>Master Test</title>         
+        <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+        <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
+        <style>.smooth { transition: box-shadow 0.3s ease-in-out; } ::selection { background-color: rgb(241, 255, 240); } :root { ::-webkit-scrollbar {  height: 10px;  width: 10px; }  ::-webkit-scrollbar-track {  background: #efefef;  border-radius: 6px; }  ::-webkit-scrollbar-thumb {  background: #d5d5d5;  border-radius: 6px; }  ::-webkit-scrollbar-thumb:hover {  background: #c4c4c4; } } /* scroll to top */.scroll-top { position: fixed; z-index: 50; padding: 0; right: 30px; bottom: 100px; opacity: 0; visibility: hidden; transform: translateY(15px); height: 46px; width: 46px; cursor: pointer; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all .4s ease; border: none; box-shadow: inset 0 0 0 2px #ccc; color: #ccc; background-color: #fff; } .scroll-top.is-active { opacity: 1; visibility: visible; transform: translateY(0); } .scroll-top .icon-tabler-arrow-up { position: absolute; stroke-width: 2px; stroke: #333; } .scroll-top svg path { fill: none; } .scroll-top svg.progress-circle path { stroke: #22C55E; stroke-width: 4; transition: all .4s ease; } .scroll-top:hover { color: var(--ghost-accent-color); } .scroll-top:hover .progress-circle path, .scroll-top:hover .icon-tabler-arrow-up { stroke: #22C55E; }</style>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="images/favicon.svg">
+    </head>     
+    <body class="md:bg-gray-100">
+        <header class="bg-white fixed top-0 w-full z-50"><a href="#main" class="screen-reader-text">Skip to content</a>
+            <nav class="bg-white border-2 flex flex-wrap items-center mx-auto px-4 py-5 shadow-md w-full z-50">
+                <button class="hover:bg-green-500 hover:text-white navbar-burger px-3 py-2 rounded text-green-500" data-name="nav-toggler" data-pg-ia='{"l":[{"name":"NabMenuToggler","trg":"click","a":{"l":[{"t":"$header #gt# nav:nth-of-type(1) #gt# div #gt# nav","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0,"class.remove":"hidden"}},{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":1}}]},{"t":"$.navbar-menu #gt# div","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"hidden","autoAlpha":0}},{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":0.7}}]}]}}]}' aria-label="menu-toggler"> <span class="block border-b-2 border-current my-1 w-6"></span> <span class="block border-b-2 border-current my-1 w-6"></span> <span class="block border-b-2 border-current my-1 w-6"></span> 
+                </button>                 <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center mx-auto"> <svg class="text-green-500 w-8" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+                        <rect x="3" y="1" width="7" height="12"></rect>
+                        <rect x="3" y="17" width="7" height="6"></rect>
+                        <rect x="14" y="1" width="7" height="6"></rect>
+                        <rect x="14" y="11" width="7" height="12"></rect>
+                    </svg> <span class="font-bold ml-2 text-gray-800 text-green-500 text-xl tracking-wide uppercase">Master Test</span> </a>
+                <button onclick="searchOpen2()" class="hover:bg-green-500 hover:text-white px-3 py-2 rounded text-green-500" aria-label="search" data-pg-ia='{"l":[{"trg":"click","a":{"l":[{"t":"$#search-field-2","l":[{"t":"set","p":0,"d":0,"l":{"class.add":"hidden","autoAlpha":0}},{"t":"tween","p":0,"d":0.3,"l":{"autoAlpha":1}},{"t":"set","p":0.3,"d":0,"l":{"class.remove":"hidden"}}]}]},"trev":"true"}]}'>
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"> 
+                        <path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"></path>                         
+                    </svg>                     
+                </button>
+                <div class="navbar-menu relative z-50">
+                    <div class="bg-gray-800 fixed hidden inset-0 navbar-backdrop opacity-50" data-pg-ia='{"l":[{"trg":"click","a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"class.add":"hidden"}}]},{"t":"$.navbar-menu #gt# nav","l":[{"t":"set","p":0,"d":0,"l":{"class.add":"hidden"}}]}]},"rst":"true"}]}'></div>
+                    <nav class="bg-white border-r bottom-0 fixed flex-col hidden left-0 max-w-sm overflow-y-auto px-6 py-6 top-0 w-5/6" data-pg-ia='{"l":[{"name":"Hide","a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":0}},{"t":"set","p":0.5,"d":0,"l":{"class.add":"hidden"}}]},{"t":"$header #gt# nav:nth-of-type(1) #gt# div #gt# div","l":[{"t":"set","p":0.5,"d":0,"l":{"class.add":"hidden"}}]}]},"trg":"no"}]}'>
+                        <div class="flex items-center mb-8"><a href="/" aria-label="Go home" title="Company" class="inline-flex items-center mx-auto"> <svg class="text-green-500 w-8" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+                                    <rect x="3" y="1" width="7" height="12"></rect>
+                                    <rect x="3" y="17" width="7" height="6"></rect>
+                                    <rect x="14" y="1" width="7" height="6"></rect>
+                                    <rect x="14" y="11" width="7" height="12"></rect>
+                                </svg> <span class="font-bold ml-2 text-gray-800 text-green-500 text-xl tracking-wide uppercase">Master Test</span> </a>
+                            <button class="navbar-close" data-pg-ia='{"l":[{"trg":"click","t":"$.navbar-menu #gt# nav","a":{"l":[{"t":"","l":[{"t":"tween","p":0.01,"d":0.5,"l":{"class.add":"hidden"}}]},{"t":"$.navbar-menu #gt# div","l":[{"t":"tween","p":0.01,"d":0.5,"l":{"class.add":"hidden"}}]}]}}]}'>
+                                <svg class="cursor-pointer h-6 hover:text-green-600 text-gray-500 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg><span class="screen-reader-text">Open Mobile Menu</span>
+                            </button>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="mb-1"><a class="block font-extrabold hover:bg-green-100 p-4 rounded text-lg" href="#top">Home</a>
+                                </li>
+                                <li class="mb-1"><a class="block font-extrabold hover:bg-green-100 p-4 rounded text-lg" href="#">Blog</a>
+                                </li>
+                                <li class="mb-1"><a class="block font-extrabold hover:bg-green-100 p-4 rounded text-lg" href="#">About</a>
+                                </li>
+                                <li class="mb-1"><a class="block font-extrabold hover:bg-green-100 p-4 rounded text-lg" href="#">Contact</a>
+                                </li>
+                                <div @click.away="open = false" class="hover:bg-green-100 relative" x-data="{ open: false }">
+                                    <button @click="open = !open" class="bg-transparent flex flex-row focus:outline-none focus:shadow-outline focus:text-black font-extrabold items-center mt-2 px-3 py-2 rounded-lg text-left w-full md:inline md:ml-1 md:mt-0 md:w-auto" data-pg-ia='{"l":[{"trg":"click","a":{"l":[{"t":"$ul #gt# .relative #gt# div","l":[{"t":"set","p":0,"d":0,"l":{"class.add":"hidden","autoAlpha":0}},{"t":"tween","p":0,"d":0.2,"l":{"class.remove":"hidden","autoAlpha":1}}]},{"t":"svg","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":180}}]}]},"trev":"true"}]}'>
+                                        <span class="font-bold text-lg">Language</span>
+                                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-8 h-8 ml-3 transition-transform duration-200 transform md:-mt-1 rotate-0">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                    <div class="absolute hidden left-0 mt-2 origin-top-right rounded-md shadow-lg w-full md:w-48">
+                                        <div class="bg-gray-100 px-2 py-2 rounded-md shadow"><a class="bg-transparent block focus:outline-none focus:shadow-outline hover:bg-green-100 hover:text-gray-900 mt-2 px-4 py-2 rounded-lg text-sm md:mt-0" href="#">English</a><a class="bg-transparent block focus:outline-none focus:shadow-outline hover:bg-green-100 hover:text-gray-900 mt-2 px-4 py-2 rounded-lg text-sm md:mt-0" href="#">Deutch</a><a class="bg-transparent block focus:outline-none focus:shadow-outline hover:bg-green-100 hover:text-gray-900 mt-2 px-4 py-2 rounded-lg text-sm md:mt-0" href="#">Svenska</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+            <div class="bg-white block hidden relative shadow-xl w-full z-50" id="search-field-2">
+                <div class="container mt-10 mx-auto py-4 text-black md:mt-0">
+                    <form method="GET" action="<?php echo esc_url(home_url()); ?>" class="mx-5">
+                        <input class="appearance-none focus:border-transparent focus:outline-none leading-normal lg:text-2xl p-2 text-gray-800 text-xl transition w-full" placeholder="Search" name="s" type="text"/>
+                        <input type="hidden" id="searchsubmit"/>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <div class="pt-30 pb-20 text-center md:pt-32">
+            <h1 class="break-normal font-bold text-2xl md:text-5xl text-green-500">Page Title</h1>
+        </div>
+        <section class="-mt-32 mx-auto p-0 sm:p-10 md:p-10 md:pt-[44px]">
+            <div>
+                <div class="py-10 mx-auto md:max-w-7xl">
+                    <div class="bg-white m-6 pb-16 pt-10 px-5 relative rounded shadow-lg">
+                        <p>
+                            Ultricies netus mollis sem eros ante hendrerit, torquent dui venenatis molestie class. Suspendisse amet ad augue eget lorem sem molestie magnis. Vitae volutpat purus praesent scelerisque iaculis eget volutpat lorem lorem fermentum posuere nisl. Lorem, platea ipsum felis scelerisque felis a torquent auctor imperdiet. Enim malesuada sagittis pharetra porta, habitant nulla rutrum nunc sociis gravida. Fusce ac congue etiam curabitur! Netus, pretium faucibus iaculis. Consequat quis pretium sapien netus etiam rhoncus massa ante interdum? Accumsan quisque vestibulum malesuada potenti consectetur quam eget nullam, vel hendrerit nascetur. Quisque adipiscing nascetur felis. Ut nullam neque mauris class nullam gravida pharetra. Mattis, quam auctor massa! Rutrum tempus suscipit cubilia enim ipsum varius aptent libero egestas metus risus et. Facilisi ridiculus eu ligula proin libero arcu? Suscipit felis massa pharetra, himenaeos pellentesque nullam duis nascetur. Lectus dui fames fringilla eros pretium congue mauris libero interdum, consequat euismod libero. Tellus, id maecenas imperdiet!
+                            </p>
+                            <p>
+                            At quisque iaculis, consequat suspendisse! Primis cubilia lorem gravida habitasse laoreet pretium risus arcu platea! Aenean non odio tortor eleifend bibendum orci ante id lacus tincidunt pharetra rhoncus. Quis tristique potenti malesuada. Interdum parturient parturient netus lectus himenaeos mattis ante urna interdum? At facilisis consequat cursus, lacinia vel penatibus magnis gravida montes sodales. Gravida senectus blandit tortor enim himenaeos. Dolor eu scelerisque curae; feugiat taciti libero integer hac taciti commodo. Luctus semper semper placerat nostra donec pretium sem. Penatibus ad cum in sit vulputate quam habitant bibendum euismod. Cum ridiculus cras vitae ac montes ligula venenatis urna odio.
+                            </p>
+                            <p>
+                            Id convallis dolor potenti duis semper dapibus metus! Non habitasse tortor non vestibulum maecenas purus eget rutrum cras dapibus consequat primis! Metus lacus nisi curabitur pretium posuere dignissim! Consectetur turpis nascetur, fringilla metus porta erat. Curae; sollicitudin tellus sem nascetur curae; posuere habitant ligula suspendisse in tincidunt volutpat. Fames posuere luctus aenean velit platea porttitor lorem per nascetur. Accumsan, ipsum habitasse himenaeos curabitur. Semper felis nullam vitae augue commodo magnis mattis maecenas libero nisi curabitur potenti. Lectus proin proin; curae; ligula venenatis ut posuere. Eget tempus odio purus pretium vestibulum iaculis nunc suspendisse eget. Aptent donec nascetur per, habitant primis vel parturient gravida. Imperdiet lacus.
+                            </p>
+                            <p>
+                            Nisl, litora blandit quam erat nam velit turpis convallis sagittis lacinia! Porttitor neque elit gravida sit quis varius interdum ante. Gravida penatibus a platea nulla! Tempus hendrerit venenatis potenti maecenas platea at cum fermentum habitant! Vehicula per turpis ullamcorper egestas, facilisi curabitur id. Dictumst felis congue quis. Eget et natoque bibendum nunc. Nisl non nascetur, class aptent nullam inceptos dignissim commodo faucibus. Facilisi id fringilla porttitor sollicitudin inceptos cum nisi turpis. Justo massa per cubilia tortor? Venenatis imperdiet habitasse mi himenaeos urna ultricies, arcu dictumst orci duis aenean. Vel lorem eleifend mauris elit dapibus velit volutpat potenti aliquam, auctor hac. Sem gravida orci risus consequat ad justo! Senectus fames vel vel netus. Sociosqu volutpat senectus tempus neque risus leo amet libero sollicitudin vitae vestibulum nec. Ultricies eu viverra mollis ullamcorper nisi libero est. Litora sociosqu.
+                            </p>
+                            <p>
+                            Parturient odio consequat rhoncus facilisis ipsum interdum. Donec mauris condimentum quis ut consequat mauris faucibus hac. Habitasse sit dis volutpat malesuada tempus nec leo donec in fames. Leo adipiscing, cum urna. Dictumst lacinia natoque inceptos vitae diam porta vestibulum luctus hac mi libero. Aptent leo at commodo pellentesque class faucibus potenti facilisi tristique. Ultrices at velit ridiculus semper faucibus euismod torquent. Conubia dapibus ad convallis commodo lorem scelerisque maecenas dapibus habitasse himenaeos iaculis? Massa dapibus nunc commodo, nullam nullam egestas sapien in sed vitae! Tellus laoreet justo sodales porttitor hendrerit amet? Leo tincidunt.
+                            </p>
+                            <p>
+                            Auctor congue taciti commodo et bibendum lorem magna inceptos ad nibh fusce potenti. Consectetur libero conubia mus varius, adipiscing leo conubia cubilia quis. Dis himenaeos scelerisque quam dui ridiculus parturient faucibus curabitur class tempus urna cum. Tellus orci torquent potenti bibendum sapien leo metus. Quis proin sollicitudin felis, dictumst maecenas iaculis nisl inceptos dolor fames luctus sed. Facilisis rhoncus velit gravida nunc morbi himenaeos vulputate arcu curae;. Tempor sed vestibulum nisi purus. Tortor neque egestas penatibus molestie donec hac eleifend. Suscipit integer sagittis velit mattis mi. Blandit tincidunt fermentum penatibus condimentum euismod luctus morbi tortor at luctus fermentum praesent. Dui leo turpis nulla rutrum curae; est sagittis blandit vivamus per tellus. Lectus penatibus class ad natoque mollis molestie et porttitor amet suscipit. Vel arcu massa ipsum.
+                            </p>
+                            <p>
+                            Volutpat, lacinia consequat justo! Sem aptent eu tempus ligula dapibus sagittis nostra. Taciti; est feugiat molestie. Sapien nostra donec interdum ipsum suscipit urna faucibus, praesent dapibus nibh. Magnis sollicitudin aliquet hendrerit id nec eget feugiat suspendisse dictumst aliquet aliquam nisi. Quam potenti cras at litora tempus vel. Neque ornare et blandit pulvinar! At nec platea urna ac eros. Nulla platea risus, nunc diam aliquam. Sociis habitant, tincidunt eleifend felis ad imperdiet penatibus fringilla! Justo ac lectus viverra molestie sociosqu potenti montes eleifend condimentum aliquam phasellus. Amet orci integer nascetur conubia ultricies laoreet nec duis imperdiet imperdiet metus viverra. Diam euismod justo cras. Class senectus orci scelerisque adipiscing urna tristique ante? Ligula dictum, eleifend consectetur enim etiam convallis enim in cursus urna.
+                            </p>
+                            <p>
+                            Lobortis vel praesent vehicula nisl purus sagittis fames malesuada blandit magnis augue class. Massa mollis dis consequat ipsum ullamcorper libero, tellus commodo in scelerisque parturient est. Sed convallis iaculis dignissim semper. Ornare rutrum nunc aenean nec risus hendrerit platea. Risus conubia erat dis, porttitor fusce parturient nunc vel arcu tincidunt dignissim. Orci sed parturient ullamcorper fringilla tincidunt leo. Egestas libero eleifend nec cubilia cursus metus montes aenean laoreet! A et dignissim fringilla eros suscipit! Vulputate, condimentum justo erat cras eget ultricies natoque. Taciti odio parturient litora neque convallis semper lacus dignissim netus rhoncus. Laoreet ut ligula senectus? Arcu.
+                            </p>
+                    </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-green-100 container font-sans max-w-md mb-10 mt-10 mx-auto p-5 rounded text-center md:max-w-6xl md:p-24">
+                <h2 class="font-bold break-normal text-2xl md:text-4xl">Subscribe to Master Template</h2>
+                <h3 class="font-bold break-normal font-normal text-gray-600 text-base md:text-xl">Get the latest posts delivered right to your inbox</h3>
+                <div class="w-full text-center pt-4">
+                    <form action="#">
+                        <div class="max-w-sm mx-auto p-1 pr-0 flex flex-wrap items-center">
+                            <input type="email" placeholder="youremail@example.com" class="flex-1 appearance-none rounded shadow p-3 text-gray-600 mr-2 focus:outline-none">
+                            <button type="submit" class="flex-1 mt-4 md:mt-0 block md:inline-block appearance-none bg-green-500 text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-green-400">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--   Scroll Top Button  -->
+        <button class="btn-toggle-round scroll-top js-scroll-top" type="button" title="Scroll to top">
+            <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="cuurentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="18" y1="11" x2="12" y2="5"/>
+                <line x1="6" y1="11" x2="12" y2="5"/>
+            </svg>
+        </button>
+        <footer class="bg-gray-200 border-t-2" cms-block="footer-block" cms-block-title="Footer Block" cms-block-description="The Footer Block">
+            <div class="mx-auto pt-16 px-4 sm:max-w-xl md:max-w-full md:px-16 lg:max-w-screen-xl lg:px-8">
+                <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="sm:col-span-2">
+                        <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center" cms-site-link="home"> <svg class="text-green-500 w-8" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none" cms-site-logo>
+                                <rect x="3" y="1" width="7" height="12"></rect>
+                                <rect x="3" y="17" width="7" height="6"></rect>
+                                <rect x="14" y="1" width="7" height="6"></rect>
+                                <rect x="14" y="11" width="7" height="12"></rect>
+                            </svg> <span class="font-bold ml-2 text-gray-800 text-green-500 text-xl tracking-wide uppercase" cms-site-name>Master Test</span> </a>
+                        <div class="mt-6 lg:max-w-sm" cms-block-field="disclaimer_field" cms-block-field-type="content" cms-block-field-title="Disclaimer Field" cms-block-field-if-empty="if">
+                            <p class="text-sm text-gray-800">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. </p>
+                            <p class="mt-4 text-sm text-gray-800">
+          Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                        </div>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                        <p class="font-bold text-green-500 text-xl tracking-wide" cms-block-field="footer_menu_title" cms-block-field-type="content">Useful Links</p>
+                        <div class="flex">
+                            <ul cms-menu="footer_top" cms-menu-register cms-menu-register-description="The footer menu Top">
+                                <li><a class="font-bold hover:text-green-500" href="#">Menu Item 1</a>
+                                </li>
+                                <li><a class="font-bold hover:text-green-500" href="#">Menu Item 1</a>
+                                </li>
+                                <li><a class="font-bold hover:text-green-500" href="#">Menu Item 1</a>
+                                </li>
+                                <li><a class="font-bold hover:text-green-500" href="#">Menu Item 1</a>
+                                </li>
+                                <li><a class="font-bold hover:text-green-500" href="#">Menu Item 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="font-bold text-green-500 text-xl tracking-wide">Social</span>
+                        <div class="flex items-center mt-1 space-x-3"><span class="inline-flex" cms-section="social_menu" cms-section-title="Social Menu"> <a href="#" class="hover:text-green-700 ml-3 text-green-500" rel="noopener noreferrer" target="_blank" cms-editable="facebook" cms-editable-type="link" cms-editable-type-2="link" cms-editable-label="Facebook" cms-editable-section="social_menu" cms-editable-if> <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg> </a> <a href="#" class="hover:text-green-700 ml-3 text-green-500" rel="noopener noreferrer" target="_blank" cms-editable="instagram" cms-editable-type="link" cms-editable-type-2="link" cms-editable-label="Instagram" cms-editable-section="social_menu" cms-editable-if> <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                    </svg> </a> <a href="#" class="hover:text-green-700 ml-3 text-green-500" rel="noopener noreferrer" target="_blank" cms-editable="mastodont" cms-editable-type="link" cms-editable-type-2="link" cms-editable-label="Mastodont" cms-editable-section="social_menu"> <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path d="M21.327 8.566c0-4.339-2.843-5.61-2.843-5.61-1.433-.658-3.894-.935-6.451-.956h-.063c-2.557.021-5.016.298-6.45.956 0 0-2.843 1.272-2.843 5.61 0 .993-.019 2.181.012 3.441.103 4.243.778 8.425 4.701 9.463 1.809.479 3.362.579 4.612.51 2.268-.126 3.541-.809 3.541-.809l-.075-1.646s-1.621.511-3.441.449c-1.804-.062-3.707-.194-3.999-2.409a4.523 4.523 0 0 1-.04-.621s1.77.433 4.014.536c1.372.063 2.658-.08 3.965-.236 2.506-.299 4.688-1.843 4.962-3.254.434-2.223.398-5.424.398-5.424zm-3.353 5.59h-2.081V9.057c0-1.075-.452-1.62-1.357-1.62-1 0-1.501.647-1.501 1.927v2.791h-2.069V9.364c0-1.28-.501-1.927-1.502-1.927-.905 0-1.357.546-1.357 1.62v5.099H6.026V8.903c0-1.074.273-1.927.823-2.558.566-.631 1.307-.955 2.228-.955 1.065 0 1.872.409 2.405 1.228l.518.869.519-.869c.533-.819 1.34-1.228 2.405-1.228.92 0 1.662.324 2.228.955.549.631.822 1.484.822 2.558v5.253z"></path>
+                                        </g>
+                                    </svg> </a> <a href="#" class="hover:text-green-700 ml-3 text-green-500" rel="noopener noreferrer" target="_blank" cms-editable="pixelfeed" cms-editable-type="link" cms-editable-type-2="link" cms-editable-label="Pixelfeed" cms-editable-section="social_menu" cms-editable-if> <svg class="w-5 h-5" viewBox="-10 -5 1034 1034" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path fill="" d="M500 176q-115 0 -215 58q-96 57 -152 153q-58 99 -58 214.5t58 214.5q56 96 152 152q100 58 215 58t215 -58q96 -56 152 -152q58 -99 58 -214.5t-58 -214.5q-56 -96 -152 -153q-100 -58 -215 -58zM432 435h112q36 0 66.5 17.5t48.5 47t18 65t-18 65t-48.5 47t-66.5 17.5 h-78l-111 106v-290q0 -31 22.5 -53t54.5 -22z"></path>
+                                        </g>
+                                    </svg> </a> </span>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-500">
+        Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami. </p>
+                    </div>
+                </div>
+                <div class="border-t flex flex-col-reverse justify-between pb-10 pt-5 w-full lg:flex-row">
+                    <p class="text-sm text-gray-600" cms-function="current_year" cms-function-type="content">&copy; Copyright <span>2024</span> <span cms-site-name="">Master Test</span>. All rights reserved. Made with ❤️ by <a href="https://meetmario.dev" target="_blank" class="text-green-500 hover:text-green-700 text-gray-600">MeetMario Dev</a></p>
+                    <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row" cms-menu="footer_menu_bottom" cms-menu-register cms-menu-register-description="The footer menu Bottom">
+                        <li>
+                            <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Terms &amp; Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script>
+        // scroll to top	
+const t=document.querySelector(".js-scroll-top");if(t){t.onclick=()=>{window.scrollTo({top:0,behavior:"smooth"})};const e=document.querySelector(".scroll-top path"),o=e.getTotalLength();e.style.transition=e.style.WebkitTransition="none",e.style.strokeDasharray=`${o} ${o}`,e.style.strokeDashoffset=o,e.getBoundingClientRect(),e.style.transition=e.style.WebkitTransition="stroke-dashoffset 10ms linear";const n=function(){const t=window.scrollY||window.scrollTopBtn||document.documentElement.scrollTopBtn,n=Math.max(document.body.scrollHeight,document.documentElement.scrollHeight,document.body.offsetHeight,document.documentElement.offsetHeight,document.body.clientHeight,document.documentElement.clientHeight),s=Math.max(document.documentElement.clientHeight,window.innerHeight||0);var l=o-t*o/(n-s);e.style.strokeDashoffset=l};n();const s=100;window.addEventListener("scroll",(function(e){n();(window.scrollY||window.scrollTopBtn||document.getElementsByTagName("html")[0].scrollTopBtn)>s?t.classList.add("is-active"):t.classList.remove("is-active")}),!1)}
+</script>         
+        <script src="pgia/lib/pgia.js"></script>
+        <script>
+        var prevScrollpos = window.pageYOffset;
+
+/* Get the header element and it's position */
+var headerDiv = document.querySelector("header");
+var horizScroll = document.querySelector(".horizontal-scroll")
+var headerBottom = headerDiv.offsetTop + headerDiv.offsetHeight;
+
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+
+  /* if scrolling down, let it scroll out of view as normal */
+  if (prevScrollpos <= currentScrollPos ){
+      headerDiv.classList.remove("fixedToTop");
+      headerDiv.style.top ="-11.2rem";
+  }
+  /* otherwise if we're scrolling up, fix the nav to the top */
+  else{  
+      headerDiv.classList.add("fixedToTop");
+      headerDiv.style.top = "0";
+
+  }
+
+  prevScrollpos = currentScrollPos;
+}
+        </script>
+    </body>     
+</html>
